@@ -21,6 +21,7 @@ function paintGreetings(username){
 const savedUsername=localStorage.getItem(USERNAME_KEY);
 console.log(savedUsername);
 
+//Check Username. if savedusername is existed, not show form.
 if (savedUsername === null){
   //show the logic
   loginForm.classList.remove(HIDDEN_CLASSNAME);
