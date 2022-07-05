@@ -44,7 +44,7 @@ author: 'Jim Rohn'
 const quote=document.querySelector("#quote span:first-child");
 const author=document.querySelector("#quote span:last-child");
 
-console.log(quotes[5]);
+
 //console.log(quotes[Math.floor(Math.random *quotes.length)]);
 const todaysQuote= quotes[Math.floor(Math.random() *quotes.length)];
 
