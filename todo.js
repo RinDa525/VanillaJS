@@ -10,8 +10,9 @@ function saveToDos(){
 
 function deleteTodo(event){
   const li =event.target.parentElement;
-  console.log(li.id);
-  li.remove();
+  li. remove();
+  toDos=toDos.filter((toDo)=> toDo.id !==parseInt(li.id)); //'li.id' is String, so We change 'li.id' to Number using 'parseInt'
+  saveToDos();
 }
 
 function paintTodo(newTodo){ //print toDos and button in Screen
